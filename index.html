@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="container">
-        
-        <form action="confirmacion.html" method="post">
+
+        <form action="confirmacion.html" method="get">
             <h1>Citas para Mascotas</h1>
             <div class="form-group">
                 <label for="">Nombres:</label>
                 <input type="text" name="nombre" id="" class="form-control">
             </div>
-            <div class="form-group">
-                <label for="">Apellido paterno:</label>
-                <input type="text" name="ApellidoP" id="" class="form-control">
+
+            <div class="form-group container">
+                <div class="row">
+                    <div class="form-group col-sm">
+                        <label for="">Apellido paterno:</label>
+                        <input type="text" name="ApellidoP" id="" class="form-control">
+                    </div>
+                    <div class="form-group col-sm">
+                        <label for="">Apellido materno:</label>
+                        <input type="text" name="ApellidoM" id="" class="form-control">
+                    </div>
+                </div>
             </div>
             <div class="form-group">
-            <label asp-for="Sexo" class="control-label"></label>
-                <select asp-for="Sexo" >
+                <label asp-for="Sexo" class="control-label"></label>
+                <select asp-for="Sexo">
                     <option value="Hombre">Hombre</option>
                     <option value="Mujer">Mujer</option>
-                     <option value="Sin Especificar">Prefiero no especificar</option>
-                </select>    
-            </div>        
+                    <option value="Sin Especificar">Prefiero no especificar</option>
+                </select>
+            </div>
             <div class="form-group">
                 <label for="">Correo electrónico:</label>
                 <input type="text" name="Correo" id="" class="form-control">
@@ -38,36 +49,37 @@
                 <input type="text" name="Teléfono" id="" class="form-control">
             </div>
             <div class="form-group">
-            <label asp-for="Distrito" class="control-label"></label>
-                <select asp-for="Distrito" >
+                <label asp-for="Distrito" class="control-label"></label>
+                <select asp-for="Distrito">
                     <option value="Santa Anita">Santa Anita</option>
                     <option value="El Agustino">El Agustino</option>
-                     <option value="La Molina">La Molina</option>
-                </select> 
-            </div>     
+                    <option value="La Molina">La Molina</option>
+                </select>
+            </div>
             <div class="form-group">
                 <label for="">Dirección</label>
                 <input type="text" name="Dirección" id="" class="form-control">
-            </div>    
+            </div>
             <div class="form-group">
                 <label for="">Nombre de la mascota:</label>
                 <input type="text" name="nombre mascota" id="" class="form-control">
             </div>
-            <div class="form-group">   
-            <label asp-for="Tipo de mascota" class="control-label"></label>
-                <select asp-for="Tipo de mascota" >
+            <div class="form-group">
+                <label asp-for="Tipo de mascota" class="control-label"></label>
+                <select asp-for="Tipo de mascota">
                     <option value="Perro">Perro</option>
                     <option value="Gato">Gato</option>
-                     <option value="Hamster">Hamster</option>
+                    <option value="Hamster">Hamster</option>
                 </select>
-            </div>  
-            <div class="form-group">
-                <button class="btn btn-primary " type="submit" >REGISTRATE</button>
-               
             </div>
-            
+            <div class="form-group">
+                <button class="btn btn-primary " type="submit">REGISTRATE</button>
+
+            </div>
+
         </form>
     </div>
-    
+
 </body>
+
 </html>
